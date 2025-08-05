@@ -64,7 +64,7 @@ jobs:
 
   # --------------------------------------------------------------------
   publish-pypi:
-    if: ${{ contains(inputs.publish, 'pypi') }}
+    if: ${{ always() && contains(inputs.publish, 'pypi') }}
     runs-on: ubuntu-latest
     needs: publish-test
 
@@ -76,6 +76,10 @@ jobs:
       url: https://pypi.org/p/ngtools-pyscript
 
     steps:
+      - name: Fail early if publish-test failed
+        if: ${{ needs.publish-test.result == 'failure' }}
+        run: exit 1
+
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
