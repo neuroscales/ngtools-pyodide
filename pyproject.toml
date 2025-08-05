@@ -36,8 +36,8 @@ dynamic = ["version"]
 
 
 [project.urls]
-Homepage = "https://github.com/balbasty/ngtools"
-Issues = "https://github.com/balbasty/ngtools/issues"
+Homepage = "https://github.com/neuroscales/ngtools-pyscript"
+Issues = "https://github.com/neuroscales/ngtools-pyscript/issues"
 
 [project.scripts]
 nglocal = "ngtools.local.cli:main"
