@@ -62,12 +62,6 @@ packages = ["ngtools"]
 [tool.versioningit]
 default-version = "0+unknown"
 
-[tool.versioningit.vcs]
-match = ["ngtools-pytest-v*"]
-
-[tool.versioningit.tag2version]
-rmprefix = "ngtools-pytest-"
-
 [tool.versioningit.format]
 # Same format as versioneer
 distance = "{base_version}+{distance}.{vcs}{rev}"
