@@ -20,8 +20,6 @@ dependencies = [
     "universal_pathlib",           # UPath
     "nibabel",                     # io nifti
     "tifffile",                    # io tiff
-    "zarr",                        # io zarr
-    "cloud-volume",                # io precomputed | zarr | n5 | boss | graphene
     # neuroglancer dependencies:
     "atomicwrites>=1.4.1",
     "google-apitools>=0.5.32",
