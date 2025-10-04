@@ -1,5 +1,5 @@
 [project]
-name = "ngtools-pyscript"
+name = "ngtools-pyodide"
 authors = [{name = "Yael Balbastre", email = "y.balbastre@ucl.ac.uk"}]
 maintainers = [{name = "Yael Balbastre", email = "y.balbastre@ucl.ac.uk"}]
 description = "Build and manipulate Neuroglancer scenes"
@@ -36,8 +36,8 @@ dynamic = ["version"]
 
 
 [project.urls]
-Homepage = "https://github.com/neuroscales/ngtools-pyscript"
-Issues = "https://github.com/neuroscales/ngtools-pyscript/issues"
+Homepage = "https://github.com/neuroscales/ngtools-pyodide"
+Issues = "https://github.com/neuroscales/ngtools-pyodide/issues"
 
 [project.scripts]
 nglocal = "ngtools.local.cli:main"
